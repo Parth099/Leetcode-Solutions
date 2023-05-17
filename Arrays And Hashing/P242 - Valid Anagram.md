@@ -72,3 +72,5 @@ class Solution {
     }
 }
 ```
+
+> Note: One other way to implement this same solution is to use a `new int[26]` and check after push up/down it array is all 0s. 
