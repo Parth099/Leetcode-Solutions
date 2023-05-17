@@ -1,7 +1,7 @@
 # P217 - Contains Duplicates
-| Link   | Tags        |
-| ------ | ----------- |
-| [p217] | #easy #java |
+| Link                                                      | Tags        |
+| --------------------------------------------------------- | ----------- |
+| [p217](https://leetcode.com/problems/contains-duplicate/) | #easy #java |
 
 
 ## Optimal
