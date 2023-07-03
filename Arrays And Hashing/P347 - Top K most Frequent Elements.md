@@ -1,4 +1,4 @@
-# P242 - Valid Anagram
+# P347 - Top K most Frequent Elements
 
 | Link                                                           | Tags        |
 | -------------------------------------------------------------- | ----------- |
