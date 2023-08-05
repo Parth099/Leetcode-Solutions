@@ -66,5 +66,32 @@ class Solution {
 
 The idea here is to encode locations and number in the same string to perform only one sweep and use only `Set`. 
 
----
+```java
+import java.lang.Math;
+
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+    
+        Set<String> locations = new HashSet();
+
+        for(int row = 0; row < board.length; row++){
+            for(int col = 0; col < board[0].length; col++){
+
+                if(board[row][col] == '.') continue;
+
+                int subBoxIndexRow = row / 3;
+                int subBoxIndexCol = col / 3;
+
+                String colLocation = String.format("(%d)%c", col, board[row][col]);
+                String rowLocation = String.format("%c(%d)", board[row][col], row);
+                String subLocation = String.format("(%d)(%d)%c", subBoxIndexRow, subBoxIndexCol, board[row][col]);
+
+                if(!locations.add(rowLocation) || !locations.add(colLocation) || !locations.add(subLocation))
+                    return false;
+            }
+        }
+        return true;
+    }
+}
+```
 
