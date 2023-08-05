@@ -5,7 +5,7 @@ Neetcode 150: [Link](https://neetcode.io/practice)
 ```mermaid
 pie
     title Difficulties
-    "Easy"   : 3
+    "Easy"   : 4
     "Medium" : 4
     "Hard"   : 0
 ```
@@ -19,4 +19,5 @@ pie
 | May 23th, 2023    | [p347](https://leetcode.com/problems/top-k-frequent-elements/)      | Array & Hashing   |
 | July 02nd, 2023   | [p36](https://leetcode.com/problems/valid-sudoku/)                  | Array & Hashing   |
 | August 05th, 2023 | [p128](https://leetcode.com/problems/longest-consecutive-sequence/) | Array & Hashing   |
+| August 05th, 2023 | [p125](https://leetcode.com/problems/valid-palindrome/solutions)    | Two Pointer       | 
 
