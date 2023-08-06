@@ -35,3 +35,35 @@ class Solution(object):
 
         return True
 ```
+
+## 167 - `two-sum-ii`
+
+#medium 
+
+Link: [Leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/submissions/)
+Runtime: $O(n)$
+
+```python
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type numbers: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        left, right = 0, len(nums) - 1
+
+        while left < right:
+            
+            current = nums[left] + nums[right]
+
+            if current < target:
+                left  += 1
+            elif current > target:
+                right -= 1
+            else: break
+
+        return [left + 1, right + 1]
+```
+
+The array is presorted, the pointers on each side are moved to find the `target`.
