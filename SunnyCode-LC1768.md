@@ -1,3 +1,6 @@
+# LC 1768
+
+## Basic
 ```python
 class Solution:
     def mergeAlternately(self, s1: str, s2: str) -> str:
@@ -21,4 +24,22 @@ class Solution:
             current_index += 1 # move onto next letter
   
         return result
+```
+
+## More Creative
+
+```python
+class Solution:
+    def mergeAlternately(self, s1: str, s2: str) -> str:
+        
+        # make s1 the longer string
+        if len(s1) < len(s2):
+            s1, s2 = s2, s1 # swap strings
+
+        s1_leftover = s1[len(s2):] # find whats gonna be left over when merged
+
+        zipped = zip(s1, s2)
+        result = "".join(f'{item[0]}{item[1]}'  for item in zipped) # use zip to split and merge
+
+        return result + s1_leftover
 ```
