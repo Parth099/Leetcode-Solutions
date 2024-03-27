@@ -43,3 +43,14 @@ class Solution:
 
         return result + s1_leftover
 ```
+
+## `itertools`
+
+```python
+from itertools import zip_longest
+
+class Solution:
+    def mergeAlternately(self, s1: str, s2: str) -> str:
+        zipped = zip_longest(s1, s2, fillvalue="")
+        return "".join(f'{item[0]}{item[1]}'  for item in zipped)
+```
